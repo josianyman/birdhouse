@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-documentation": "^4.4.5",
     "@strapi/plugin-graphql": "4.4.5",
@@ -19,7 +18,8 @@
     "db-migrate": "^0.11.12",
     "db-migrate-pg": "^1.0.0",
     "knex": "0.21.18",
-    "pg": "latest"
+    "pg": "latest",
+    "strapi-plugin-postgis": "^0.1.5"
   },
   "author": {
     "name": "Varsinais-Suomen petolintutoimikunta"

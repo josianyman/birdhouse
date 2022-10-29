@@ -4,7 +4,8 @@
   "info": {
     "singularName": "birdhouse",
     "pluralName": "birdhouses",
-    "displayName": "Birdhouse"
+    "displayName": "Birdhouse",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -13,6 +14,26 @@
   "attributes": {
     "installed": {
       "type": "date"
+    },
+    "location": {
+      "columnType": {
+        "type": "specificType",
+        "args": [
+          "geometry(POINT,4326)"
+        ]
+      },
+      "type": "json",
+      "fieldRenderer": "postgis",
+      "isSpatial": true,
+      "srid": 4326,
+      "coord_dimension": 2,
+      "f_table_schema": "public",
+      "geoType": "POINT"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
