@@ -1,0 +1,11 @@
+version: "2.4"
+
+services:
+  postgresql:
+    image: postgres:14.2-alpine
+    environment:
+      - POSTGRES_USER=falco
+      - POSTGRES_PASSWORD=gt4He05edq3XaoY
+      - POSTGRES_DB=falco
+    ports:
+      - "5432:5432"

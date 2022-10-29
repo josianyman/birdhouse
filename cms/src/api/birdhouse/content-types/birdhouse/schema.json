@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "birdhouses",
+  "info": {
+    "singularName": "birdhouse",
+    "pluralName": "birdhouses",
+    "displayName": "Birdhouse"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "installed": {
+      "type": "date"
+    }
+  }
+}
