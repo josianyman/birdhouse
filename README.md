@@ -9,11 +9,11 @@ $ docker-compose -f birdhouse.yml up
 2. Start Strapi backend (from folder ./cms)
 
 ```
-$ npm i && npm run develop
+$ nvm use && npm i && npm run build && npm run develop
 ```
 
 3. Start Next.JS React UI (from folder ./pwa)
 
 ```
-$ npm i && npm run dev
+$ nvm use && npm i && npm run dev
 ```
