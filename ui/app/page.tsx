@@ -1,4 +1,4 @@
-import { demos } from '@/lib/demos';
+import { items } from '@/lib/items';
 import Link from 'next/link';
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 
@@ -7,7 +7,7 @@ export default function Page() {
     <UserProvider>
       <div className="space-y-6">
         <div className="space-y-8 text-white">
-          {demos
+          {items
             .filter((section) =>
               section.items.some((x) => typeof x.isDisabled === 'undefined'),
             )

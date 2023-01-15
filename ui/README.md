@@ -8,8 +8,16 @@ This playground is a mirror of the [Next.js v13 App Directory Playground](https:
 
 ## Running Locally
 
+1. Setup your Auth0 instance and provide values to env
 1. Install dependencies: `yarn`
 1. Start the dev server: `yarn dev`
+
+Required values for .env
+AUTH0_SECRET='fill up your generated secret'
+AUTH0_BASE_URL='http://localhost:3000'
+AUTH0_ISSUER_BASE_URL='your Auth0 local issuer url'
+AUTH0_CLIENT_ID='your Auth0 client id'
+AUTH0_CLIENT_SECRET='your Auth0 client secret'
 
 **Note:** The playground uses [Tailwind CSS](https://tailwindcss.com) via [PostCSS](https://turbo.build/pack/docs/features/css#postcss).
 
