@@ -1,0 +1,3 @@
+# Birdhouse
+
+Main documentation
